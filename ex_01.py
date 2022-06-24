@@ -1,6 +1,25 @@
+from arquivo_apoio import conversao_discionario as cvd
+from arquivo_apoio import contador_discionario as ctd
+arquivos='alunos.csv'
+
+#Quantos alunos estudam em cada escola, e qual a escola com mais alunos
+
+lista=cvd(arquivos,',')
+
+escolas_alunos=ctd(lista,'escola')
+
+escolas_alunos=escolas_alunos.items()
+
+escola_mais_alunos=0
+maior_escola=''
+
+for i in escolas_alunos:
+    
+    print(f'Escola: {i[0]}\nAlunos: {i[1]}\n')
+
+    if escola_mais_alunos < i[1]:
+        escola_mais_alunos += i[1]
+        maior_escola = i[0]
 
 
-
-#Alunos que têm média (das notas do 1º e 2º semestre) maior ou igual a 7 não
-# precisam fazer exame, sendo nesse caso sua nota de exame 0, e são
-# aprovados por nota.
+print(f'Escola com mais alunos: {maior_escola}\n')
