@@ -14,8 +14,8 @@ alundos_monitoria_true = 0
 for i in discionario:
     if i['ano'] == 3:
         media = (i['nota_semestre_1'] + i['nota_semestre_2'])/2
-        if media < 7:
-            if i['nota_exame'] <= 5:
+        if media < 7 or i['faltas'] > 15:
+            if i['nota_exame'] <= 5 or i['faltas'] > 15:
                 if i['monitoria'] == True:
                     alundos_monitoria_true += 1
                     alunos_reprovados += 1
