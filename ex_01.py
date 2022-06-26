@@ -1,9 +1,9 @@
 from arquivo_apoio import conversao_discionario as cvd
 from arquivo_apoio import contador_discionario as ctd
 arquivos='alunos.csv'
-
-#Quantos alunos estudam em cada escola, e qual a escola com mais alunos
-
+'''
+    Quantos alunos estudam em cada escola, e qual a escola com mais alunos
+'''
 lista=cvd(arquivos,',')
 
 escolas_alunos=ctd(lista,'escola')

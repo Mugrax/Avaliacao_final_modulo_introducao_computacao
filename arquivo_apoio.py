@@ -1,4 +1,5 @@
 import csv
+from re import I
 
 # arquivos='alunos.csv'
 
@@ -43,6 +44,27 @@ def contador_discionario(discionario,chave):
 
     return lista_discionario
 
+def reprovados(discionario):
+    lista=[]
+    for i in discionario:
+        
+        ambas=False
+        faltas=False
+        media_exame=False
+        ano=i['ano']
+
+        media = (i['nota_semestre_1'] + i['nota_semestre_2'])/2
+
+        if media < 7 and i['nota_exame'] <= 5 and i['faltas'] > 15:
+            ambas=True
+        elif i['faltas'] > 15:
+            faltas=True
+        elif media < 7 and i['nota_exame'] <= 5:
+            media_exame=True
+        if not(ambas == False and faltas == False and media_exame == False):
+            lista+=[[ano,ambas,faltas,media_exame]]
+
+    return lista
 
     
 # lista=conversao_discionario(arquivos,',')
