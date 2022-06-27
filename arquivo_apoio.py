@@ -1,7 +1,4 @@
 import csv
-from re import I
-
-# arquivos='alunos.csv'
 
 
 def conversao_bool(monitoria):
@@ -65,8 +62,3 @@ def reprovados(discionario):
             lista+=[[ano,ambas,faltas,media_exame]]
 
     return lista
-
-    
-# lista=conversao_discionario(arquivos,',')
-# discionario=contador_discionario(lista,'escola')
-# print(lista)

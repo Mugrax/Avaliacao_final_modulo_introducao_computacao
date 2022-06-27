@@ -1,8 +1,9 @@
 from arquivo_apoio import conversao_discionario as cvd
 
 arquivos = 'alunos.csv'
+
 '''
-    Qual a média de todas as notas (do 1º e 2º semestre) 
+    Qual a média de todas as notas (do 1º e 2º semestre)  
     dos alunos do 2º ano?
 '''
 

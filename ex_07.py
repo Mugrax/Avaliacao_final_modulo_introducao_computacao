@@ -26,7 +26,7 @@ for i in discionario:
         if i['monitoria'] == True:
             alunos_3+=1
 
-base=['Primeiro Ano','Segundo Ano','Terceiro Ano']
+base=['1º Ano','2º Ano','3º Ano']
 lista=[alunos_1,alunos_2,alunos_3]
 
 fig, ax = pyplot.subplots()

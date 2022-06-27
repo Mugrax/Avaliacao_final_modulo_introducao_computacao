@@ -17,7 +17,7 @@ reprovados = rp(discionario)
 primeiro_ano=0
 segundo_ano=0
 terceiro_ano=0
-base=['Primeiro Ano','Segundo Ano','Terceiro Ano']
+base=['1º Ano','2º Ano','3º Ano']
 
 for i in reprovados:
     if i[0] == 1:

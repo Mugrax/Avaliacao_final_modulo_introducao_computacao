@@ -2,7 +2,9 @@ from arquivo_apoio import conversao_discionario as cvd
 
 arquivos='alunos.csv'
 
-#Quantos alunos do 1 ano foram aprovados sem exame?
+'''
+    Quantos alunos do 1 ano foram aprovados sem exame?
+'''
 
 discionario=cvd(arquivos,',')
 
